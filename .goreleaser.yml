@@ -32,7 +32,7 @@ archives:
 brews:
   - name: kiln
     github:
-      owner: pivotal-cf
+      owner: dalvarado
       name: kiln
     folder: HomebrewFormula
     ids:
