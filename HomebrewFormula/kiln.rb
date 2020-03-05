@@ -6,12 +6,12 @@ class Kiln < Formula
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/pivotal-cf/kiln/releases/download/0.41.0/kiln-darwin-0.41.0.tar.gz"
-    sha256 "8dc65c6968e40b6df23e73adf927d4e54675d904bd8bd5ec35077857f96c41d8"
+    url "https://github.com/dalvarado/kiln/releases/download/0.41.0/kiln-darwin-0.41.0.tar.gz"
+    sha256 "7d2ba0b3b9d9fbc498da4c1e578390c379679baff74ede544d6820bbf4b2f768"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/pivotal-cf/kiln/releases/download/0.41.0/kiln-linux-0.41.0.tar.gz"
-      sha256 "323eced9a8e50d82743056b6725d931cf66fdf90e489215cbc04c290e8d70b48"
+      url "https://github.com/dalvarado/kiln/releases/download/0.41.0/kiln-linux-0.41.0.tar.gz"
+      sha256 "fd3c6df72378204f8dbb95b84f78e026586ee4f81887cd4210e01909c73ef99f"
     end
   end
 
