@@ -5,7 +5,7 @@ before:
     - go mod download
 release:
   github:
-    owner: pivotal-cf
+    owner: dalvarado
     name: kiln
 builds:
 - env:
