@@ -32,7 +32,7 @@ signs:
   -
     id: brew
     signature: "${artifact}_sig"
-    cmd: gpg2
+    cmd: gpg
 
     # command line arguments for the command
     #
