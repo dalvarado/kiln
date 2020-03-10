@@ -28,36 +28,36 @@ archives:
       - goos: windows
         format: zip
 
-signs:
-  -
-    id: brew
-    signature: "${artifact}_sig"
-    cmd: gpg
-
-    # command line arguments for the command
-    #
-    # to sign with a specific key use
-    # args: ["-u", "<key id, fingerprint, email, ...>", "--output", "${signature}", "--detach-sign", "${artifact}"]
-    #
-    # defaults to `["--output", "${signature}", "--detach-sign", "${artifact}"]`
-    args: ["--output", "${signature}", "${artifact}"]
-
-
-    # which artifacts to sign
-    #
-    #   checksum: only checksum file(s)
-    #   all:      all artifacts
-    #   none:     no signing
-    #
-    # defaults to `none`
-    artifacts: all
-
-    # IDs of the artifacts to sign.
-    # Defaults to all.
-    # If `artifacts` is checksum, this fields has no effect.
-    ids:
-      - homebrew
-    
+#signs:
+#  -
+#    id: brew
+#    signature: "${artifact}_sig"
+#    cmd: gpg
+#
+#    # command line arguments for the command
+#    #
+#    # to sign with a specific key use
+#    # args: ["-u", "<key id, fingerprint, email, ...>", "--output", "${signature}", "--detach-sign", "${artifact}"]
+#    #
+#    # defaults to `["--output", "${signature}", "--detach-sign", "${artifact}"]`
+#    args: ["--output", "${signature}", "${artifact}"]
+#
+#
+#    # which artifacts to sign
+#    #
+#    #   checksum: only checksum file(s)
+#    #   all:      all artifacts
+#    #   none:     no signing
+#    #
+#    # defaults to `none`
+#    artifacts: all
+#
+#    # IDs of the artifacts to sign.
+#    # Defaults to all.
+#    # If `artifacts` is checksum, this fields has no effect.
+#    ids:
+#      - homebrew
+#
 
 brews:
   - name: kiln
